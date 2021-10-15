@@ -3,12 +3,88 @@
     margin: 0;
 }
 
-html {
-    height: 100vh;
+
+
+
+@media screen and (min-width: 768px) {
+    
+    html {
+        height: 100vh;
+    }
+    
+    body {
+        height: 100%;
+    }
+    
+    main {
+        height: 75%;
+    }
+
+    nav ul {
+        width: 45%;
+    }
+
+    article{
+        width: 28%;
+    }
+    article:first-child{
+        text-align: left;
+    }
+    article:last-child{
+        text-align: right;
+    }
 }
 
-body {
-    height: 100%;
+
+@media screen and (max-width: 768px) {
+    
+    html, body, main {
+        height: auto;
+    }
+
+    header {
+        padding: 30px;
+    }
+    
+    nav ul {
+        width: 85%;
+    }
+    
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    article {
+        margin: 10px 0px;
+        text-align: center;
+        width: 85%;
+    }
+    #about {
+        flex-direction: column;
+    }
+    
+    #about>* {
+        margin: 20px 0;
+    }
+    
+    #about>div>p {
+        margin-top: 20px;
+    }
+    
+    #aboutGameOne>p{
+        width: 85px;
+    }
+    
+    
+    footer{
+        padding: 30px 0;
+        flex-direction: column;
+    }
+    
+    footer>*{
+        margin-bottom: 20px;
+    }
 }
 
 nav li {
@@ -25,7 +101,6 @@ header {
 }
 
 main {
-    height: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,7 +118,6 @@ nav {
 nav ul {
     margin: 0 auto;
     display: flex;
-    width: 45%;
     justify-content: space-between;
 }
 
@@ -62,31 +136,26 @@ section{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-
+    
 }
 
-    /* Ne marche pas pour une raison inconnue, pas le temps de m'en occuper */
-    /* @media screen and (max-width: 760px) {
-        article {
-            display: grid;
-        }
-    } */
+/* Ne marche pas pour une raison inconnue, pas le temps de m'en occuper */
+/* @media screen and (max-width: 760px) {
+    article {
+        display: grid;
+    }
+} */
 
 article{
     height: 250px;
-    width: 400px;
+    /* width: 400px; */
     background-color: green;
     display: flex;
     flex-direction: column-reverse;
     padding: 0 15px;
 }
 
-article:first-child{
-    text-align: left;
-}
-article:last-child{
-    text-align: right;
-}
+
 
 article p{ 
     padding-bottom: 15px;
