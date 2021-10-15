@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+}
+
+nav li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0077C7;
+    height: 15%;
+}
+
+main {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#mainLogo {
+    height: 60px;
+    width: auto;
+    margin: 0px auto 15px;
+}
+
+nav {
+    width: 100%;
+}
+nav ul {
+    margin: 0 auto;
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+} 
+
+.footerLogo {
+    width: 50px;
+    height: 50px;
+}
+
+section{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+    /* Ne marche pas pour une raison inconnue, pas le temps de m'en occuper */
+    /* @media screen and (max-width: 760px) {
+        article {
+            display: grid;
+        }
+    } */
+
+article{
+    height: 250px;
+    width: 400px;
+    background-color: green;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 15px;
+}
+
+article:first-child{
+    text-align: left;
+}
+article:last-child{
+    text-align: right;
+}
+
+article p{ 
+    padding-bottom: 15px;
+}
+
+#guideButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#guideButton button {
+    width: 400px;
+    height: 80px;
+    border-radius: 35px;
+    background-color: #0077C7;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0077C7;
+    margin-top: 45px;
+    padding: 15px 0;
+}
+
+#about>div:first-child{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#aboutGameOne{
+    display: flex;
+    align-items: center;
+}
+
+#aboutGameOne img{
+    padding-left: 5px;
+    height: 30px;
+    width: auto;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    text-align: center;
+    align-items: center;
+}
+
+footer p:last-child {
+    width: 60%;
+}

@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+}
+
+nav li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0077C7;
+    height: 15%;
+}
+
+#mainLogo {
+    height: 60px;
+    width: auto;
+    margin: 0px auto 15px;
+}
+
+nav {
+    width: 100%;
+}
+nav ul {
+    margin: 0 auto;
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+} 
+
+
+main {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#content img {
+    height: 450px;
+    width: auto;
+}
+
+#animeInfos {
+    width: 60%;
+    background-color: #0077c738;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+footer {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    text-align: center;
+    align-items: center;
+}
+
+footer p:last-child {
+    width: 60%;
+}
